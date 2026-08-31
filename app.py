@@ -27,5 +27,4 @@ def main():
 
 
 main()
-git add .
 
