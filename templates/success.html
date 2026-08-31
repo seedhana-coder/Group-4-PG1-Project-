@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration Successful</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>CareBridge Hospital</h1>
+    </header>
+
+    <main>
+
+        <div class="success-container">
+
+            <h2>Patient Registered Successfully!</h2>
+
+            <p>
+                The patient information has been recorded.
+            </p>
+
+            <div class="patient-information">
+
+                <p>
+                    <strong>Name:</strong> {{ name }}
+                </p>
+
+                <p>
+                    <strong>Age:</strong> {{ age }}
+                </p>
+
+                <p>
+                    <strong>Patient ID:</strong> {{ patient_id }}
+                </p>
+
+            </div>
+
+            <a class="button" href="/register">
+                Register Another Patient
+            </a>
+
+            <a class="button" href="/">
+                Back to Home
+            </a>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
