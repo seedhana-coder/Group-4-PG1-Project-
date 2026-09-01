@@ -1,1 +1,157 @@
+/* Reset basic spacing */
+* {
+    box-sizing: border-box;
+}
 
+/* Main page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1f4e79;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header title */
+header h1 {
+    margin: 0 0 15px;
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main layout */
+main {
+    min-height: 80vh;
+    padding: 50px 20px;
+}
+
+/* Home page hero section */
+.hero {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    background: white;
+    padding: 60px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Home page heading */
+.hero h2 {
+    font-size: 32px;
+    color: #1f4e79;
+}
+
+/* Buttons */
+.button,
+button {
+    display: inline-block;
+    background-color: #1f4e79;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+/* Button hover */
+.button:hover,
+button:hover {
+    background-color: #163a5c;
+}
+
+/* Form layout */
+.form-container,
+.success-container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form heading */
+.form-container h2,
+.success-container h2 {
+    text-align: center;
+    color: #1f4e79;
+}
+
+/* Form fields */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input boxes */
+input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit button */
+button {
+    margin-top: 25px;
+}
+
+/* Error message */
+.error {
+    background-color: #ffe5e5;
+    color: #b00020;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Success page */
+.success-container {
+    text-align: center;
+}
+
+/* Patient information box */
+.patient-information {
+    background-color: #f4f7fb;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f4e79;
+    color: white;
+}
