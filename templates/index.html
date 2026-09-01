@@ -1,48 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>CareBridge Hospital</title>
-
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>CareBridge Hospital Management System</title>
 </head>
 
 <body>
 
-    <header>
-        <h1>CareBridge Hospital</h1>
+    <h1>🏥 CareBridge Hospital Management System</h1>
 
-        <nav>
-            <a href="/">Home</a>
-            <a href="/register">Register Patient</a>
-        </nav>
-    </header>
+    <p>Welcome! Please choose one of the services below.</p>
 
-    <main>
+    <hr>
 
-        <section class="hero">
+    <p>
+        <a href="/register">
+            <button>👤 Patient Registration</button>
+        </a>
+    </p>
 
-            <h2>Welcome to CareBridge Hospital</h2>
+    <p>
+        <a href="/appointment">
+            <button>📅 Appointment Booking</button>
+        </a>
+    </p>
 
-            <p>
-                Providing better healthcare through modern technology.
-            </p>
+    <p>
+        <a href="/billing">
+            <button>💰 Billing</button>
+        </a>
+    </p>
 
-            <a class="button" href="/register">
-                Register a Patient
-            </a>
-
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2026 CareBridge Hospital</p>
-    </footer>
+    <p>
+        <a href="/triage">
+            <button>🚑 Triage Assignment</button>
+        </a>
+    </p>
 
 </body>
-
 </html>

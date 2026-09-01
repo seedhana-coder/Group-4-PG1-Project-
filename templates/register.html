@@ -1,83 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Register Patient - CareBridge Hospital</title>
-
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Patient Registration</title>
 </head>
 
 <body>
 
-    <header>
-        <h1>CareBridge Hospital</h1>
+    <h1>👤 Patient Registration</h1>
 
-        <nav>
-            <a href="/">Home</a>
-            <a href="/register">Register Patient</a>
-        </nav>
-    </header>
+    <hr>
 
-    <main>
+    {% if error %}
+        <p style="color:red;"><strong>{{ error }}</strong></p>
+    {% endif %}
 
-        <div class="form-container">
+    <form method="POST">
 
-            <h2>Register Patient</h2>
+        <label>Patient Name:</label><br>
+        <input
+            type="text"
+            name="patient_name"
+            placeholder="Enter patient name"
+            required
+        >
+        <br><br>
 
-            {% if error %}
-                <div class="error">
-                    {{ error }}
-                </div>
-            {% endif %}
+        <label>Patient Age:</label><br>
+        <input
+            type="number"
+            name="patient_age"
+            placeholder="Enter patient age"
+            required
+        >
+        <br><br>
 
-            <form method="POST">
+        <label>Patient ID:</label><br>
+        <input
+            type="text"
+            name="patient_id"
+            placeholder="Enter patient ID"
+            required
+        >
+        <br><br>
 
-                <label for="name">
-                    Patient Name
-                </label>
+        <button type="submit">Register Patient</button>
 
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter patient name"
-                >
+    </form>
 
-                <label for="age">
-                    Age
-                </label>
+    <br>
 
-                <input
-                    type="number"
-                    id="age"
-                    name="age"
-                    placeholder="Enter patient age"
-                >
-
-                <label for="patient_id">
-                    Patient ID
-                </label>
-
-                <input
-                    type="text"
-                    id="patient_id"
-                    name="patient_id"
-                    placeholder="Enter patient ID"
-                >
-
-                <button type="submit">
-                    Register Patient
-                </button>
-
-            </form>
-
-        </div>
-
-    </main>
+    <a href="/">
+        <button>← Back to Home</button>
+    </a>
 
 </body>
 
+</html>
+
+    <br>
+
+    <a href="/">Back to Home</a>
+
+</body>
 </html>

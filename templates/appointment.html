@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Booking</title>
+</head>
+<body>
+
+<h1>Appointment Booking</h1>
+
+<form method="POST">
+
+    <label>Patient Name:</label><br>
+    <input type="text" name="patient_name" required><br><br>
+
+    <label>Appointment Date:</label><br>
+    <input type="date" name="appointment_date" required><br><br>
+
+    <label>Appointment Type:</label><br>
+
+    <input type="radio" name="appointment_type" value="GP" required>
+    GP<br>
+
+    <input type="radio" name="appointment_type" value="Specialist">
+    Specialist<br><br>
+
+    <button type="submit">Book Appointment</button>
+
+</form>
+
+{% if error %}
+<p style="color:red;">
+    {{ error }}
+</p>
+{% endif %}
+
+<br>
+
+<a href="/">Back to Home</a>
+
+</body>
+</html>
