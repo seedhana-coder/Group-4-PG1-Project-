@@ -1,3 +1,7 @@
+from functions.register_patient import patient_registration
+from functions.book_appointment import book_appointment
+from functions.calculate_bill import billing
+from functions.assign_triage import assign_triage
 def main():
     while True:
         print("\n===== Hospital Management System =====")
