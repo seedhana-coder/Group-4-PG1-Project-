@@ -29,4 +29,4 @@ The project is developed as part of the Programming 1 project.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/CareBridge-Hospital.git
+git clone https://github.com/seedhana-coder/Group-4-PG1-Project-.git
